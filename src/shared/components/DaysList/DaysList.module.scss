@@ -1,0 +1,28 @@
+@import 'src/shared/styles/variables.scss';
+
+.box {
+  position: absolute;
+  top: -25px;
+  right: 0;
+
+  height: 228px;
+  padding: 15px 35px 9px 33px;
+  border-radius: 6px;
+  background-color: $card-bg-color;
+  color: $primary-bg-color;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  margin-bottom: 12px;
+}
+
+.loader {
+  position: absolute;
+  top: 239px;
+  left: 81px;
+}

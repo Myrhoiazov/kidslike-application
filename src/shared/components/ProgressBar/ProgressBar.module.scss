@@ -1,0 +1,71 @@
+@import 'src/shared/styles/variables.scss';
+@import 'src/shared/styles/mixin.scss';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+
+  @include media(tablet-only) {
+    align-self: center;
+  }
+}
+
+.pointsInfo {
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: right;
+  letter-spacing: 0.04em;
+  color: $tertiary-text-color;
+
+  @include media(tablet-only) {
+    text-align: center;
+  }
+}
+
+.pointsInfoAward {
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: right;
+  letter-spacing: 0.04em;
+  color: $tertiary-text-color;
+}
+
+.points {
+  margin-left: 12px;
+  font-weight: 700;
+  color: $primary-text-color;
+}
+
+.progressWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.pointsAmount {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: right;
+  letter-spacing: 0.2em;
+  color: $primary-text-color;
+}
+
+.collectedPoints {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: right;
+  letter-spacing: 0.2em;
+  color: $primary-text-color;
+}
+
+.progressTool {
+  display: block;
+  width: 350px;
+  margin-left: 20px;
+}

@@ -1,0 +1,28 @@
+@import 'src/shared/styles/variables.scss';
+@import 'src/shared/styles/mixin.scss';
+
+.header {
+  padding: 22px 0;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 9;
+}
+
+.wrapper {
+  max-width: 1280px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.menuTablet_Desktop {
+  display: none;
+  @include media(tablet) {
+    display: block;
+    @include media(desktop) {
+      display: block;
+    }
+  }
+}
